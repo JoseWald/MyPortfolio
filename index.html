@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Jose Wald</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+      <!-- font awesome css -->
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+   </head>
+   <body>
+           <!-- Bouton "Retour en haut" -->
+    <button id="scrollTopBtn" onclick="scrollToTop()">
+      &#8679;
+  </button>
+
+  <!-- JavaScript pour gérer le scroll -->
+  <script>
+      // Afficher ou masquer le bouton en fonction du scroll
+      document.addEventListener("DOMContentLoaded", function () {
+          let scrollTopBtn = document.getElementById("scrollTopBtn");
+
+          window.addEventListener("scroll", function () {
+              let scrollThreshold = window.innerWidth <= 768 ? 50 : 200; // 50px pour mobile, 200px pour desktop
+
+              if (window.scrollY > scrollThreshold) {
+                  scrollTopBtn.style.display = "block"; // Affiche le bouton
+              } else {
+                  scrollTopBtn.style.display = "none"; // Cache le bouton
+              }
+          });
+      });
+
+
+      // Fonction pour remonter en haut de la page
+      function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+  </script>
+      <!-- header section start -->
+      <div class="header_section">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="logo"><a href="index.html"><img src="images/MyLogo.png" alt="" width="50px" height="50px"></a></div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="#account-section">Account</a>             
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#project-section">Portfolio</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="project.html">Project</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#certificate-section">Certificates</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <!-- header section end -->
+         <!-- banner section start -->
+         <div class="banner_section layout_padding">
+            <section class="slide-wrapper">
+               <div class="container-fluid">
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container-fluid">
+                              <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="banner_taital_main">
+                                       <h3 class="banner_text">Hello I am <strong>Jose Wald</strong> </h3>
+                                       <h2 class="banner_taital">Unity Game developper <br> C/C++ programmer <br> Laravel/NodeJS web developper</h2>
+                                    </div>
+                                 </div>
+                                  <!--
+                                 <div class="col-md-6">
+                                    <div class="social_icon">
+                                       <ul>
+                                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 -->
+                                 <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                    <img src="images/MyPhoto3.png" class="img-fluid custom-img" alt="Photo de Jose Wald"  >
+                                 </div>
+                                                
+                              </div>
+                           </div>
+                        </div>
+                     
+                        
+                     </div>
+                  </div>
+               </div>
+            </section>
+      
+         </div>
+         <!-- banner section end -->
+      </div>
+      <!-- header section end -->
+        <!-- account section start -->
+      <section id="#account-section">
+      <div class="services_section layout_padding"id="account-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="services_taital">My <span class="portfolio_taital_1">external account</span></h1>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="services_section_2">
+               <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                     <a href="https://github.com/JoseWald">
+                        <div class="box_main ">
+                           <div class="app_icon"><img src="images/github.png" width="50px" height="50px"></div>
+                           <div class="app_icon_1"><img src="images/github.png" width="50px" height="50px"></div>
+                           <h4 class="services_text ">Github</h4>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <a href="https://www.codingame.com/profile/7a152e0d6820d7a9588a41fc600ed4802519495">
+                        <div class="box_main ">
+                           <div class="app_icon"><img src="images/codingame.svg"  width="50px" height="50px"></div>
+                           <div class="app_icon_1"><img src="images/codingame.svg"  width="50px" height="50px"></div>
+                           <h4 class="services_text">Codingame</h4>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <a href="https://www.linkedin.com/in/jose-wald-850104305/">
+                        <div class="box_main ">
+                           <div class="app_icon"><img src="images/linkedin.png"width="50px" height="50px"></div>
+                           <div class="app_icon_1"><img src="images/linkedin.png"width="50px" height="50px"></div>
+                           <h4 class="services_text">Linkedin</h4>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <a href="https://www.facebook.com/profile.php?id=61553870352120">
+                        <div class="box_main ">
+                           <div class="app_icon"><img src="images/facebook.png" width="50px" height="50px"></div>
+                           <div class="app_icon_1"><img src="images/facebook.png"width="50px" height="50px"></div>
+                           <h4 class="services_text">Facebook</h4>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+      <!-- account section end -->
+  
+      <!-- project section start -->
+      <div class="portfolio_section layout_padding" id="project-section"> 
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="portfolio_taital">Project<span class="portfolio_taital_1"> Overview</span></h1>
+               </div>
+            </div>
+            <div class="portfolio_section">
+               <div class="portfolio_section_2">
+                  <div class="row">
+                     <div class="col-md-8">
+                        <div class="container_main">
+                           <img src="images/GJ2025.jpeg" alt="" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <div class="btn_main">
+                                    <div class="buy_bt"><a href="Project/GJ.html">Game Jam Plus</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/NinjaPHP.png" alt="" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <div class="btn_main">
+                                    <div class="buy_bt"><a href="Project/Dojo.html">Dojo</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="portfolio_section_2">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/pokemon.jpg" alt="" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <div class="btn_main">
+                                    <div class="buy_bt"><a href="Project/Pokemon.html">Pokemon</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/Elen.png" alt="" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <div class="btn_main">
+                                    <div class="buy_bt"><a href="Project/Elen.html">Elen</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/BigO.png" alt="" class="image">
+                           <div class="overlay">
+                              <div class="text">
+                                 <div class="btn_main">
+                                    <div class="buy_bt"><a href="https://www.linkedin.com/posts/jose-wald-850104305_github-josewalddyprogvsbruteforce-benchmark-activity-7282324704936296449-coUs?utm_source=share&utm_medium=member_desktop">Dynamic Programming</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="seemore_bt"><a href="project.html">See More</a></div>
+         </div>
+      </div>
+      <!-- project section end -->
+      <!-- blog section start -->
+      <div class="blog_section layout_padding"id="certificate-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="blog_taital">My <span class="blog_taital_1">Certificates</span></h1>
+                  <p class="blog_text"></p>
+               </div>
+            </div>
+         </div>
+         <div class="blog_section_2">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <a href="https://www.codingame.com/certification/9J11z3BRzlkAgVAWRJbqVA">
+                        <div class="blog_box">
+                           <div class="blog_img">
+                              <h4 class="date_text">January 2025</h4>
+                              <h4 class="prep_text">C++ Codingame </h4>
+                           </div>
+                           <p class="lorem_text">Certificate of Problem-Solving Proficiency with C++ </p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-md-4">
+                     <a href="https://www.codingame.com/certification/BM1ixMbI9s-oPHl4iyizgA">
+                        <div class="blog_box">
+                           <div class="blog_img_2">
+                              <h4 class="date_text">April 2024</h4>
+                              <h4 class="prep_text">PHP Codingame </h4>
+                           </div>
+                           <p class="lorem_text">Certificate of Problem-Solving Proficiency with PHP</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-md-4">
+                     <a href="https://www.codingame.com/certification/F6CCv3dXA2Q-HeiKQcmIbQ">
+                        <div class="blog_box">
+                           <div class="blog_box_3">
+                              <div class="blog_img_3">
+                                 <h4 class="date_text">July 2024</h4>
+                                 <h4 class="prep_text">JavaScript Codingame </h4>
+                              </div>
+                              <p class="lorem_text">Certificate of Problem-Solving Proficiency with JavaScript</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+              
+            </div>
+         </div>
+      </div>
+      <!-- blog section end -->
+      <!-- contact section start -->
+      <div class="contact_section layout_padding" id="contact-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 text-center">
+                  <h1 class="contact_taital">My <span class="contact_taital_1">Contact</span></h1>
+               </div>
+            </div>
+            <div class="contact_section_2">
+               <div class="row justify-content-center">
+                  <div class="col-md-12 text-center">
+                     <div class="contact_info">
+                        <a href="tel:+261349835114" class="phone_link"><h1>+261 34 98 351 14</h1></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      
+      <!-- contact section end -->
+      <!-- project box section start -->
+      <div class="project_box">
+         <div class="container">
+            <div class="project_main">
+               <h1 class="hire_text">Hire me for your projects</h1>
+               <div class="callnow_bt"><a href="mailto:rajaonarivonyjosewald@gmail.com">Contact Me</a></div>
+            </div>
+         </div>
+      </div>
+      <!-- project box section end -->
+      <!-- footer section start -->
+      <div class="footer_section">
+         <div class="container">
+            <div class="location_text">
+               <img src="images/Romain.jpeg" alt="" width="50px" height="50px">
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+     
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         $('#myCarousel').carousel({
+            interval: false
+         });
+         
+         //scroll slides on swipe for touch enabled devices
+         
+         $("#myCarousel").on("touchstart", function(event){
+         
+            var yClick = event.originalEvent.touches[0].pageY;
+            $(this).one("touchmove", function(event){
+         
+                var yMove = event.originalEvent.touches[0].pageY;
+                if( Math.floor(yClick - yMove) > 1 ){
+                    $(".carousel").carousel('next');
+                }
+                else if( Math.floor(yClick - yMove) < -1 ){
+                    $(".carousel").carousel('prev');
+                }
+            });
+            $(".carousel").on("touchend", function(){
+                $(this).off("touchmove");
+            });
+         });
+      </script>
+   </body>
+</html>

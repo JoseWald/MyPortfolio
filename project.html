@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Wald | Project</title>
+    <link rel="stylesheet" href="css/Project-css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/Project-css/templatemo-style.css">
+    <link rel="stylesheet" href="css/style.css">
+<!--
+    
+TemplateMo 556 Catalog-Z
+
+https://templatemo.com/tm-556-catalog-z
+
+-->
+</head>
+<body>
+        <!-- Bouton "Retour en haut" -->
+    <button id="scrollTopBtn" onclick="scrollToTop()">
+        &#8679;
+    </button>
+
+    <!-- JavaScript pour gérer le scroll -->
+    <script>
+        // Afficher ou masquer le bouton en fonction du scroll
+        document.addEventListener("DOMContentLoaded", function () {
+            let scrollTopBtn = document.getElementById("scrollTopBtn");
+
+            window.addEventListener("scroll", function () {
+                let scrollThreshold = window.innerWidth <= 768 ? 50 : 200; // 50px pour mobile, 200px pour desktop
+
+                if (window.scrollY > scrollThreshold) {
+                    scrollTopBtn.style.display = "block"; // Affiche le bouton
+                } else {
+                    scrollTopBtn.style.display = "none"; // Cache le bouton
+                }
+            });
+        });
+
+
+        // Fonction pour remonter en haut de la page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+      <!-- header section start -->
+      <div class="header_section">
+        <div class="container">
+           <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="logo">
+                  <a href="index.html"><img src="images/MyLogo.png" alt="" width="50px" height="50px"></a>
+              </div>
+              <ul class="navbar-nav ml-auto d-flex flex-row w-100 justify-content-around">
+                 <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>             
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#web">Web</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#Game">Game</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#DSA">DSA</a>
+                 </li>
+              </ul>
+           </nav>
+        </div>
+    <style>
+        /* Supprime le débordement horizontal */
+        body {
+            overflow-x: hidden;
+        }
+        
+        /* Couleur des liens */
+        .navbar-light .navbar-nav .nav-link {
+            color: white !important;
+            font-size: 18px; /* Taille normale */
+            padding: 10px 3px; /* Espacement */
+        }
+        
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: yellow !important;
+        }
+        
+        /* Ajuste la taille sur mobile */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                justify-content: space-between !important; /* Garde les liens alignés horizontalement */
+            }
+        
+            .navbar-nav .nav-item {
+                flex: 1; /* Permet aux liens de s’adapter */
+                text-align: center;
+            }
+        
+            .navbar-light .navbar-nav .nav-link {
+                font-size: 14px; /* Réduit la taille du texte */
+                padding: 8px 1px; /* Réduit l'espacement */
+            }
+        
+            .logo img {
+                width: 40px; /* Réduit la taille du logo */
+                height: 40px;
+            }
+        }
+        
+    </style>
+
+        <!-- header section end -->
+
+  
+
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row mb-4"id="web">
+            <h2 class="col-6 tm-text-primary">
+                Web Project
+            </h2> 
+        </div>
+          <!-- ESTI WEB START -->
+        <div class="row tm-mb-90 tm-gallery">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div id="estiCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <figure class="effect-ming tm-video-item">
+                                <img src="images/estiweb1.png" alt="Image 1" class="img-fluid-project">
+                                <figcaption class="d-flex align-items-center justify-content-center">
+                                    <h2>Learn more</h2>
+                                    <a href="Project/esti-web.html">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="effect-ming tm-video-item">
+                                <img src="images/estiweb2.png" alt="Image 2" class="img-fluid-project">
+                                <figcaption class="d-flex align-items-center justify-content-center">
+                                    <h2>Learn more</h2>
+                                    <a href="Project/esti-web.html">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="effect-ming tm-video-item">
+                                <img src="images/estiweb3.png" alt="Image 3" class="img-fluid-project">
+                                <figcaption class="d-flex align-items-center justify-content-center">
+                                    <h2>Learn more</h2>
+                                    <a href="Project/esti-web.html">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="d-flex justify-content-between tm-text-gray mt-2">
+                    <span class="tm-text-gray-light">ESTI WEB</span>
+                    <span>Laravel + React + MySQL</span>
+                </div>
+            </div>
+            <!-- ESTI WEB END -->
+           <!--  Start MyShop Section  -->
+           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+            <div id="myShopCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="Project/MyShop.html">
+                            <figure class="effect-ming tm-video-item">
+                                <img src="images/MyShop2.png" alt="Image 1" class="img-fluid-project">
+                                <figcaption class="d-flex align-items-center justify-content-center">
+                                    <h2>Learn More</h2>
+                                 
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="Project/MyShop.html">
+                            <figure class="effect-ming tm-video-item">
+                                <img src="images/MyShop1.png" alt="Image 2" class="img-fluid-project">
+                                <figcaption class="d-flex align-items-center justify-content-center">
+                                    <h2>Learn More</h2>
+                                  
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="Project/MyShop.html">
+                            <figure class="effect-ming tm-video-item">
+                                <img src="images/MyShop3.png" alt="Image 3" class="img-fluid-project">
+                                <figcaption class="d-flex align-items-center justify-content-center">
+                                    <h2>Learn More</h2>
+                                
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between tm-text-gray mt-2">
+                <span class="tm-text-gray-light">MyShop</span>
+                <span>MongoDB + Express + React + Node</span>
+            </div>
+        </div>
+        
+            <!-- End MyShop Section  -->
+
+            <!-- DOJO Start -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div id="dojoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="Project/Dojo.html">
+                                <figure class="effect-ming tm-video-item">
+                                    <img src="images/Dojo5.png" alt="Image 1" class="img-fluid-project">
+                                    <figcaption class="d-flex align-items-center justify-content-center">
+                                        <h2>Learn More</h2>
+                                    
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="Project/Dojo.html">
+                                <figure class="effect-ming tm-video-item">
+                                    <img src="images/Dojo1.png" alt="Image 2" class="img-fluid-project">
+                                    <figcaption class="d-flex align-items-center justify-content-center">
+                                        <h2>Learn More</h2>
+                                      
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="Project/Dojo.html">
+                                <figure class="effect-ming tm-video-item">
+                                    <img src="images/Dojo2.png" alt="Image 3" class="img-fluid-project">
+                                    <figcaption class="d-flex align-items-center justify-content-center">
+                                        <h2>Learn More</h2>
+                                    
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between tm-text-gray mt-2">
+                    <span class="tm-text-gray-light">DOJO</span>
+                    <span>Laravel + MySQL</span>
+                </div>
+            </div>
+            
+            <!-- DOJO End -->
+            <!-- Pokemon Section Start-->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="images/NodeJS.png" alt="Image" class="img-fluid-project">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Learn More</h2>
+                        <a href="Project/Pokemon.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">Pokemon</span>
+                    <span>NodeJS + MySQL</span>
+                </div>
+            </div>
+            <!-- Pokemon Section End-->
+            <div class="row mb-4" id="Game">
+                <h2 class="col-6 tm-text-primary">
+                    Game Project
+                </h2>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="images/GJ2025.jpeg" alt="Image" class="img-fluid-project">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Learn More</h2>
+                        <a href="Project/GJ.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">GAME JAM PLUS 2024</span>
+                    <span>C# - Unity 3D</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="images/Elen.png" alt="Image" class="img-fluid-project">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Learn More</h2>
+                        <a href="Project/Elen.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">ELEN</span>
+                    <span>C# - Unity 2D</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="images/CallOfToDo.png" alt="Image" class="img-fluid-project">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Learn More</h2>
+                        <a href="Project/Call-of-to-Do.html">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">Call of to Do</span>
+                    <span>C# - Unity 3D</span>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="images/LuokeeLogo.png" alt="Image" class="img-fluid-project">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>WATCH</h2>
+                        <a href="https://www.facebook.com/profile.php?id=61553870352120">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">Luokee</span>
+                    <span>Facebook page as portfolio</span>
+                </div>
+            </div>
+
+            <div class="row mb-4" id="DSA">
+                <h2 class="col-6 tm-text-primary">
+                    DSA Project
+                </h2>
+            </div>
+                <!-- DP vs BF Start -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div id="dojoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <figure class="effect-ming tm-video-item">
+                                <img src="images/DP.png" alt="Image 1" class="img-fluid-project">
+                                <figcaption class="d-flex align-items-center justify-content-center">
+                                    <h2>Learn More</h2>
+                                    <a href="https://www.linkedin.com/posts/jose-wald-850104305_github-josewalddyprogvsbruteforce-benchmark-activity-7282324704936296449-coUs?utm_source=share&utm_medium=member_desktop">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="effect-ming tm-video-item">
+                                <img src="images/Recursion.png" alt="Image 2" class="img-fluid-project">
+                                <figcaption class="d-flex align-items-center justify-content-center">
+                                    <h2>Learn More</h2>
+                                    <a href="https://www.linkedin.com/posts/jose-wald-850104305_github-josewalddyprogvsbruteforce-benchmark-activity-7282324704936296449-coUs?utm_source=share&utm_medium=member_desktop">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between tm-text-gray mt-2">
+                    <span class="tm-text-gray-light">Dynamic Programming vs Brute Force Recursion</span>
+                    <span>C++</span>
+                </div>
+            </div>
+            <!-- DP vs BF End -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="images/BinaryTree.png" alt="Image" class="img-fluid-project">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Learn More</h2>
+                        <a href="https://www.linkedin.com/posts/jose-wald-850104305_github-josewaldbinary-tree-algorithm-activity-7284641062843777024-cm5X?utm_source=share&utm_medium=member_desktop">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">Binary Tree Algorithm</span>
+                    <span>C++</span>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="images/CertificatePsolv.png" alt="Image" class="img-fluid-project">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Look</h2>
+                        <a href="https://www.hackerrank.com/certificates/9077e7e7089a">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">Problem solving </span>
+                    <span>Hackerrank</span>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="images/COC.png" alt="Image" class="img-fluid-project">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Codingame</h2>
+                        <a href="https://www.codingame.com/profile/7a152e0d6820d7a9588a41fc600ed4802519495">View more</a>
+                    </figcaption>                    
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">CP Progression</span>
+                    <span>Codingame account</span>
+                </div>
+            </div>
+           
+          
+        </div> <!-- row -->
+
+    </div> <!-- container-fluid, tm-container-content -->
+    <div class="footer_section">
+        <div class="container">
+           <div class="location_text">
+              <img src="images/Romain.jpeg" alt="" width="50px" height="50px">
+           </div>
+        </div>
+     </div>
+     <!-- footer section end -->
+    
+    <script src="js/project-js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
